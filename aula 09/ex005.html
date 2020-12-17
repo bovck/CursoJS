@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+
+    <style>
+        body{
+
+            background: rgb(138, 81, 81);
+            color: white;
+            font: normal 18pt arial;
+              
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Aprendendo a usar o DOM</h1>
+    <p>Vamos começar a usar o DOM</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div name = 'msg'>clique aqui para começar</br> </div>
+    <script>
+        var n1 = window.document.getElementsByTagName('p')[0]
+        /*
+        var i = window.document.getElementById('msg')
+        i.style.background = 'green'
+        i.innerText = 'mudei o texto...'
+        */
+        
+        var t = document.getElementsByName('msg')[0]
+        t.innerText = 'Vai se fuder'
+
+     </script>
+</body>
+</html>

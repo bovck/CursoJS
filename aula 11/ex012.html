@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando</title>
+</head>
+<body>
+    <h1>Teste de nacionanalidade</h1>
+    Sua nacionalidade <input type="text" name="txtname" id="txtname">
+    <input type="button" value="autenticar" onclick="auntenticar()">
+    <div id='res'></div>
+    <script>
+        function auntenticar() { 
+            var nac = document.querySelector('input#txtname')
+            var res = document.querySelector('div#res')
+            var text = String(nac.value)
+            res.innerHTML = `<p>Sua nacionalidade é <strong>${text}<strong></p>`
+            if (text == 'brasileiro') {
+                res.innerHTML += '<p>Você é do <strong>Brasil</strong></p>'
+            }else{
+                res.innerHTML += '<p>Você é <strong>Estrangeiro</strong></p>'
+
+            }
+
+
+
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>
